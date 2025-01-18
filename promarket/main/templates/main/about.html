@@ -1,0 +1,54 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}О нас{% endblock %}
+
+{% block extra_head %}
+    <!-- Добавьте дополнительные стили или мета-теги здесь -->
+{% endblock %}
+
+{% block content %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">О нас</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="{% url 'home' %}">Главная</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">О нас</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">О нас</h4>
+                <h1 class="display-4">Всё для вашей чашки кофе</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Наша продукция</h1>
+                    <h5 class="mb-3">Мы предлагаем немецкие кофемашины высочайшего качества, напрямую со склада.</h5>
+                    <p>В нашем ассортименте найдется идеальная кофемашина для любого ценителя кофе. Мы предоставляем гарантию 1 год, а также удобные варианты покупки: рассрочка, кредит или аренда.</p>
+                </div>
+                <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="{% static 'main/img/about.png' %}" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Наша миссия</h1>
+                    <p>Наше миссия — сделать качественный кофе доступным каждому. Мы стремимся предоставить лучший выбор кофемашин из Германии и обеспечить наших клиентов удобными способами приобретения и обслуживания, чтобы каждый мог наслаждаться идеальной чашкой кофе и найти кофемашину под свои цели и нужды.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+{% endblock %}
+
+{% block extra_js %}
+    <!-- Добавьте дополнительные скрипты здесь -->
+{% endblock %}

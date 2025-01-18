@@ -1,0 +1,83 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Меню{% endblock %}
+
+{% block extra_head %}
+    <!-- Add any additional styles or meta tags here -->
+{% endblock %}
+
+{% block content %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Каталог</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="{% url 'home' %}">Главная</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Каталог</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Catalog Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Аренда & покупка</h4>
+                <h1 class="display-4">Самые низкие цены на рынке</h1>
+            </div>
+            <div class="row">
+                {% for p in product %}
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">{{ p.title }}</h2>
+                        <div class="row align-items-center mb-5">
+                            <div class="col-12 col-sm-4">
+                                <img class="w-100 mb-3 mb-sm-0" src="{{ p.image.url }}" alt="{{ p.title }}">
+                                <h6 class="menu-price">{{ p.price }}</h6>
+                            </div>
+                            <div class="col-12 col-sm-8">
+                                <h5>Black coffee</h5>
+                                <p class="m-0">{{ p.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">{{ p.title }}</h2>
+                        <div class="row align-items-center mb-5">
+                            <div class="col-12 col-sm-4">
+                                <h6 class="menu-price">{{ p.price }}</h6>
+                                <img class="w-100 mb-3 mb-sm-0" src="{{ p.image.url }}" alt="{{ p.title }}">
+                            </div>
+                            <div class="col-12 col-sm-8">
+                                <h5>Black coffee</h5>
+                                <p class="m-0">{{ p.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Catalog End -->
+{% endblock %}
+
+{% block extra_js %}
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'main/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'main/lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'main/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'main/lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'main/lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'main/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'main/mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'main/mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'main/js/main.js' %}"></script>
+{% endblock %}

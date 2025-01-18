@@ -1,0 +1,289 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block extra_head %}
+    <!-- Add any additional styles or meta tags here -->
+{% endblock %}
+
+{% block content %}
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{% static 'main/img/carousel-1.jpg' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-primary font-weight-medium m-0">Открой для себя кофе по-новому</h2>
+                        <h1 class="display-1 text-white m-0">ProMarket.kg</h1>
+                        <h2 class="text-white m-0">* Только для настоящих ценителей *</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{% static 'main/img/carousel-2.jpg' %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-primary font-weight-medium m-0">Открой для себя кофе по-новому</h2>
+                        <h1 class="display-1 text-white m-0">ProMarket.kg</h1>
+                        <h2 class="text-white m-0">* Только для настоящих ценителей *</h2>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">О нас</h4>
+                <h1 class="display-4">Всё для вашей чашки кофе</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Наша продукция</h1>
+                    <h5 class="mb-3">Мы предлагаем немецкие кофемашины высочайшего качества, напрямую со склада.</h5>
+                    <p>В нашем ассортименте найдется идеальная кофемашина для любого ценителя кофе. Мы предоставляем гарантию 1 год, а также удобные варианты покупки: рассрочка, кредит или аренда.</p>
+                    <a href="" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Читать ещё</a>
+                </div>
+                <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="{% static 'main/img/about.png' %}" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Наша миссия</h1>
+                    <p>Наше миссия — сделать качественный кофе доступным каждому. Мы стремимся предоставить лучший выбор кофемашин из Германии и обеспечить наших клиентов удобными способами приобретения и обслуживания, чтобы каждый мог наслаждаться идеальной чашкой кофе и найти кофемашину под свои цели и нужды.</p>
+<!--                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Только для настоящих ценителей</h5>-->
+<!--                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>-->
+<!--                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</h5>-->
+                    <a href="" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Читать ещё</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Наши услуги</h4>
+                <h1 class="display-4">Продажа и аренда кофемашин</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="{% static 'main/img/service-1.jpg' %}" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa fa-truck service-icon"></i>Доставка</h4>
+                            <p class="m-0">Закажите кофемашину с доставкой по всему Кыргызстану! Мы предлагаем быструю и надежную доставку в любой город. Гарантия качества и лучшие цены! Оформите заказ на нашем сайте или позвоните нам прямо сейчас.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="{% static 'main/img/service-2.jpg' %}" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa fa-coffee service-icon"></i>Рассрочка & Кредит</h4>
+                            <p class="m-0">Мы предлагаем удобную рассрочку на покупку кофемашин через нашего партнера - Мбанк. Условия рассрочки уточняйте у нашего менеджера.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="{% static 'main/img/service-3.jpg' %}" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa fa-award service-icon"></i>Гарантия</h4>
+                            <p class="m-0">Мы предоставляем гарантию один год на все кофемашины. В течение всего срока службы вашей кофемашины, вы можете рассчитывать на нашу консультационную поддержку.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="{% static 'main/img/service-4.jpg' %}" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa fa-table service-icon"></i>Аренда</h4>
+                            <p class="m-0">Не уверены в том, нужна ли вам кофемашина? Есть возможность взять кофемашину в аренду с возможностью выкупа.
+                            Для оформления аренды нужен только паспорт! Без залогов!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Offer Start -->
+    <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
+        <div class="container py-5">
+            <h1 class="display-3 text-primary mt-3">Скидка 20%</h1>
+            <h1 class="text-white mb-3">Специальное предложение</h1>
+            <h4 class="text-white font-weight-normal mb-4 pb-3">Только по понедельникам с 1 ноября 2024 по 30 января 2026</h4>
+            <form class="form-inline justify-content-center mb-4">
+                <div class="input-group">
+                    <input type="text" class="form-control p-4" placeholder="Ваш email адрес" style="height: 60px;">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary font-weight-bold px-4" type="submit">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Offer End -->
+
+    <!-- Catalog Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Аренда & покупка</h4>
+                <h1 class="display-4">Самые низкие цены на рынке</h1>
+            </div>
+            <div class="row">
+                {% for p in product %}
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">{{ p.title }}</h2>
+                        <div class="row align-items-center mb-5">
+                            <div class="col-12 col-sm-4">
+                                <img class="w-100 mb-3 mb-sm-0" src="{{ p.image.url }}" alt="{{ p.title }}">
+                                <h6 class="menu-price">{{ p.price }}</h6>
+                            </div>
+                            <div class="col-12 col-sm-8">
+                                <h5>Black coffee</h5>
+                                <p class="m-0">{{ p.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">{{ p.title }}</h2>
+                        <div class="row align-items-center mb-5">
+                            <div class="col-12 col-sm-4">
+                                <h6 class="menu-price">{{ p.price }}</h6>
+                                <img class="w-100 mb-3 mb-sm-0" src="{{ p.image.url }}" alt="{{ p.title }}">
+                            </div>
+                            <div class="col-12 col-sm-8">
+                                <h5>Black coffee</h5>
+                                <p class="m-0">{{ p.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Catalog End -->
+
+    <!-- Reservation Start -->
+    <div class="container-fluid my-5">
+        <div class="container">
+            <div class="reservation position-relative overlay-top overlay-bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 my-5 my-lg-0">
+                        <div class="p-5">
+                            <div class="mb-4">
+                                <h1 class="display-3 text-primary">Скидка 5%</h1>
+                                <h1 class="text-white">Если забронируете кофемашину онлайн</h1>
+                            </div>
+                            <p class="text-white">Вы можете забронировать кофемашину и приехать когда вам удобно или заказать доставку с установкой</p>
+                            <p class="text-white">*Доставка и установка по г. Бишкек всего 100 сом</p>
+                            <ul class="list-inline text-white m-0">
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Выберете удобное для вас время</li>
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Бронь действует два дня</li>
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Только для настоящих ценителей</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
+                            <h1 class="text-white mb-4 mt-5">Подай заявку прямо сейчас</h1>
+                            <form class="mb-5">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Имя" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Почта" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <div class="date" id="date" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Дата" data-target="#date" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="time" id="time" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Время" data-target="#time" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reservation End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Отзывы</h4>
+                <h1 class="display-4">Что говорят наши клиенты?</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                {% for t in testimonials %}
+                    <div class="testimonial-item">
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid" src="{{ t.image.url }}" alt="">
+                            <div class="ml-3">
+                                <h4>{{ t.client_name }}</h4>
+                            </div>
+                        </div>
+                        <p class="m-0">{{ t.feedback }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+         </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+{% endblock %}
+{% block extra_js %}
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'main/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'main/lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'main/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'main/lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'main/lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'main/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'main/mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'main/mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'main/js/main.js' %}"></script>
+{% endblock %}
