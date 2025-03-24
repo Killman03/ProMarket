@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-@%r97-f$i6v5pkstd5ap-&@_ul@&mng(lokstif(e37a*-asxv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'promarket', 'promarket.kg', '217.114.13.180']
 
 
 # Application definition
@@ -80,7 +80,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'promarket',
-        'USER': 'postgres',
+        'USER': 'seller',
         'PASSWORD': '1234567890',
         'HOST': 'localhost',
         'PORT': '5432',
@@ -121,8 +121,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+
 STATIC_URL = "static/"
-STATICFILES_DIRS = [BASE_DIR/'static']
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 
 MEDIA_URL = "/media/"
