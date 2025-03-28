@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@%r97-f$i6v5pkstd5ap-&@_ul@&mng(lokstif(e37a*-asxv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', 'promarket', 'promarket.kg', '217.114.13.180']
 
